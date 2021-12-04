@@ -37,6 +37,7 @@ public class GameWindow extends JFrame{
         float delta_time = (current_time - last_frame_time) * 0.000000001f;
         last_frame_time = current_time;
         drop_top = drop_top + drop_v *delta_time; // Вертикальное движение
+        drop_left = drop_left + drop_v *delta_time; // Горизонтальное движение
         g.drawImage(background,0, 0, null);
         g.drawImage(drop,(int) drop_left, (int) drop_top, null);
         //g.drawImage(game_over,280, 120, null);
